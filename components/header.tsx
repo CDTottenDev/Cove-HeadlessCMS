@@ -30,7 +30,7 @@ function header() {
           <a href="/#contact" className="block px-4 py-2 text-sm border-y-2 border-teal-900 text-slate-600 hover:text-teal-700 hover:bg-teal-100 rounded-full">
             Contact
           </a>
-          <a href="/#jewelry" className="block px-4 py-2 text-sm border-y-2 border-teal-900 text-slate-600 hover:text-teal-700 hover:bg-teal-100 rounded-full">
+          <a href="/jewelry" className="block px-4 py-2 text-sm border-y-2 border-teal-900 text-slate-600 hover:text-teal-700 hover:bg-teal-100 rounded-full">
             Jewelry
           </a>
         </div>
