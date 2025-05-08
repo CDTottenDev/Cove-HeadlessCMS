@@ -1,10 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
-import "../globals.css";
-import Header from "@/components/header"
-import { Footer } from "./components/footer"
-import { ClerkProvider } from "@clerk/nextjs"
+import "../globals.css"
 import { SubHeader } from "./components/sub-header"
+import Header from "../../components/header"
+import { ClerkProvider } from "@clerk/nextjs"
 
 export const metadata: Metadata = {
   title: "Elegant Jewelry | Timeless Pieces for Every Occasion",
@@ -18,15 +17,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="min-h-screen flex flex-col">
-        <ClerkProvider>
+    <ClerkProvider dynamic>
+      <html lang="en">
+        <body>
           <Header />
           <SubHeader />
           {children}
-          <Footer />
-        </ClerkProvider>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ClerkProvider>
   )
 }
